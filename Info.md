@@ -10,6 +10,27 @@
 + Смотреть, как улыбается котик, когда пример решён верно
 ![Картинка-3](https://github.com/ButterflyGamesDeveloper/Umnozjayka/blob/main/N5.jpg)
 
+
+А это код для создания бесконечного движения рыбок!
+
 ```csharp
-Console.WriteLine("Мяу!");
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class scroll : MonoBehaviour
+{
+    float move_speed = 50f;
+    [SerializeField] Transform start;
+    [SerializeField] Transform end;
+
+    void Update()
+    {
+        transform.Translate(Vector2.right * move_speed * Time.deltaTime);
+        if (transform.position.x >= end.position.x)
+        {
+            transform.position = new Vector2(start.position.x, transform.position.y);
+        }
+    }
+}
 ```
