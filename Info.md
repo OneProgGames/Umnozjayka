@@ -11,5 +11,5 @@
 ![Картинка-3](https://github.com/ButterflyGamesDeveloper/Umnozjayka/blob/main/N5.jpg)
 
 ```csharp
-Console.WriteLine("Мяу!);
+Console.WriteLine("Мяу!");
 ```
